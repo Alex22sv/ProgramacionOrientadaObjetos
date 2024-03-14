@@ -34,3 +34,39 @@ Para ejecutar una clase, es necesario que tenga un main.
 En C++, al usar new, al finalizar teníamos que usar delete. Eso se llama liberación de memoria. En Java, se llama recolección de basura. En Java, el garbage collector lo hace automáticamente, no tenemos que hacerlo nosotros, Java lo hace por nosotros.
 Si el archivo tuviese múltiples clases, lo cual no es recomendable, en esos casos el main debe ir en la clase que tiene el nombre del archivo. Si no dice public ni void, es default.
 Especificadores de visibilidad: public, private, protected, default
+
+## 14/03/2024
+Clase con el otro catedrático de la materia (Mario López).
+Labs en horarios disponibles de lunes a viernes a las 9am o 3:30pm
+
+Métodos Setters y Getters.
+Nuestros objetos son cápsulas que se almacenan en datos.
+UML (Unified Modelling Language) sería como un mapa de nuestro sistema.
+El nombre de los atributos y las funciones inician con la letra minúscula. 
+Ejemplos de atributos: -socialSecurityNumber:String, -gender:boolean, -dateofBirth:Date
+Ejemplos de métodos: +getSocialSecurityNumber:String, +getGender:boolean, +setSocialSecurityNumber:void, +setGender:void
+El negativo indica que es privado, el positivo indica que es público.
+La clase es la plantilla/esqueleto. Cuando instanciamos un Objeto, lo que hacemos es crer un Objeto. Un objeto no puede existir si no existe la clase.
+
+Ejercicio de abstracción: realizaremos una abstracción completa de na computadora (sin periféricos). ESte ejemplo nos permitirá visualizar cómo pueden interactuar diversas Clases para formar un todo.
+Componentes: motherboard, RAM, CPU, fuente de alimentación, disco duro.
+
+Motherboard necesita que exista CPU, RAM, PSU y Storage. Storage necesita OS. CPU, RAM, PSU Y OS son independientes.
+Paso 1. Abstraer
+Paso 2. Identificar prioridades.
+Paso 3. Descodificar
+(1a) CPU: Modelo, marca, velocidad, hilos, núcleos
+(1b) RAM: Modelo, marca, capacidad, frecuencia, RGB
+(1c) PSU: Modelo, marca, voltaje, corriente, certificación
+(1d) OS: Modelo, marca, versión
+(2) Storage: Modelo, marca, capacidad, vel. lectura, vel. escritura, tipo, OS
+(3) Motherboard: Modelo, marca, CPU, RAM, PSU, Storage
+Con la palabra reservada (".this") llamamos lo que está dentro de la clase.
+No hay clase principal, solo método principal. El `public static void main(String[] args) {}`
+ES público porque debe ser accesible en todo el sistema, es static porque siempre debe existir (incluso aunque no haya instancia del objeto), void no retorna nada.
+`System.out.printl()` donde System es una clásica estática, por eso podemos acceder a `.out` sin instanciarlo. `printl` es un static void.
+
+Tarea de práctica: realizar una abstacción lo más detallada posible de un libro de texto. 
+1. Enlistar todos los atributos de un libro.
+2. Enlistar todos los métodos que puede realizarse con un libro.
+3. Crear un archivo llamado Libro.java donde se contenga la clase Libro con sus métodos y atributos. SOlo deben incluirse métodos setters y getters.
