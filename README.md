@@ -70,3 +70,8 @@ Tarea de práctica: realizar una abstacción lo más detallada posible de un lib
 1. Enlistar todos los atributos de un libro.
 2. Enlistar todos los métodos que puede realizarse con un libro.
 3. Crear un archivo llamado Libro.java donde se contenga la clase Libro con sus métodos y atributos. SOlo deben incluirse métodos setters y getters.
+
+
+(1) Libro: título, autor, isbn, editorial, fecha de publicación, género literario, # de páginas
+(2) Autor: nombres, apellidos, edad, fecha de nacimiento, nacional 
+(3) Editorial: nombre, país origen, fecha de fundación, fundador
