@@ -1,6 +1,6 @@
 # Programación Orientada a Objetos
 Repositorio de trabajos de Programación Orientada a Objetos, ciclo 01/2024
-
+<<<<<
 # Apuntes
 ## 7/03/2024
 Ahora tenemos un cambio de paradigma. PED era un paradigma estructurado, POO es el paradigma orientado a objetos. Un paradigma es una forma de pensar y construir el código. Antes hemos visto el paradigma estructurado, que es seguir una serie de pasos ordenadamente, ahora veremos otra forma de pensar para resolver los problemas. Mientras más formas de resolver un problema y más lenguajes de programación saben, más valor tiene el programador (en el mercado).
@@ -48,8 +48,8 @@ Ejemplos de métodos: +getSocialSecurityNumber:String, +getGender:boolean, +setS
 El negativo indica que es privado, el positivo indica que es público.
 La clase es la plantilla/esqueleto. Cuando instanciamos un Objeto, lo que hacemos es crer un Objeto. Un objeto no puede existir si no existe la clase.
 
-Ejercicio de abstracción: realizaremos una abstracción completa de na computadora (sin periféricos). ESte ejemplo nos permitirá visualizar cómo pueden interactuar diversas Clases para formar un todo.
-Componentes: motherboard, RAM, CPU, fuente de alimentación, disco duro.
+Ejercicio de abstracción: realizaremos una abstracción completa de una computadora (sin periféricos). ESte ejemplo nos permitirá visualizar cómo pueden interactuar diversas Clases para formar un todo.
+Componentes: motherboard, RAM, CPU, fuente de alimentación (PSU: power suply unit), disco duro.
 
 Motherboard necesita que exista CPU, RAM, PSU y Storage. Storage necesita OS. CPU, RAM, PSU Y OS son independientes.
 Paso 1. Abstraer
@@ -61,17 +61,32 @@ Paso 3. Descodificar
 (1d) OS: Modelo, marca, versión
 (2) Storage: Modelo, marca, capacidad, vel. lectura, vel. escritura, tipo, OS
 (3) Motherboard: Modelo, marca, CPU, RAM, PSU, Storage
-Con la palabra reservada (".this") llamamos lo que está dentro de la clase.
+Con la palabra reservada (".this") llamamos lo que está dentro de la clase. Se ocupa para poder acceder a algo que está dentro de la misma clase.
 No hay clase principal, solo método principal. El `public static void main(String[] args) {}`
-ES público porque debe ser accesible en todo el sistema, es static porque siempre debe existir (incluso aunque no haya instancia del objeto), void no retorna nada.
+ES **público** porque debe ser accesible en todo el sistema, es **static** porque siempre debe existir (incluso aunque no haya instancia del objeto), **void** no retorna nada.
 `System.out.printl()` donde System es una clásica estática, por eso podemos acceder a `.out` sin instanciarlo. `printl` es un static void.
 
 Tarea de práctica: realizar una abstacción lo más detallada posible de un libro de texto. 
 1. Enlistar todos los atributos de un libro.
 2. Enlistar todos los métodos que puede realizarse con un libro.
-3. Crear un archivo llamado Libro.java donde se contenga la clase Libro con sus métodos y atributos. SOlo deben incluirse métodos setters y getters.
+3. Crear un archivo llamado Libro.java donde se contenga la clase Libro con sus métodos y atributos. Solo deben incluirse métodos setters y getters.
 
 
 (1) Libro: título, autor, isbn, editorial, fecha de publicación, género literario, # de páginas
 (2) Autor: nombres, apellidos, edad, fecha de nacimiento, nacional 
 (3) Editorial: nombre, país origen, fecha de fundación, fundador
+## 19/03/2024
+El nombre general de los setters y los getters es accessors y mutators. El accessor nos da acceso a los datos, el mutator es para crear mutaciones de los valores. En Java, los conocemos como getters y setters.
+La diferencia entre double y float es que double duplica la precisión del número (mayor cantidad de decimales).
+Un método estático es uno que le pertenece a la plantilla (Clase). Los objetos no pueden usar static, no se puede acceder desde los objetos.
+Los constructores se llaman igual que la clase y no llevan tipo de dato. El primer uso es para tener valores por defecto.
+Polimorfismo es cuando tenemos muchas cosas de muchas formas. Es decir, los métodos que tienen varios con el mismo nombre pero diferentes métodos.
+Los dos pilares de POO son el encapsulamiento y el polimorfismo.
+Paradigma estructurado es determinar un problema, determinar la lista de pasos, seguir ordenadamente esos pasos.
+
+### 04. Herencia
+La herencia es el tercer pilar de POO.
+Hay subcategorías.
+Padre e hijo. A la clase generalizada se le llama Superclase Clase Padre. A la clase específica se le llama Subclase o Clase Hijo. Se heredan todos los Atributos y Métodos, pero se preserva el sentido del Encapsulamiento.
+Cada clase es una caja. Cada caja tiene 3 partes: el nombre de la clase, atributos y métodos. Las flechas hacia arriba (en blanco) indica que la clase hereda de otra clase. Menos es privado, más es público.
+Ejercicio de clase: hacer Fortnite en papel

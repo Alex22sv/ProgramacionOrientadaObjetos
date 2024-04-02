@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MotherBoard.iml" filepath="$PROJECT_DIR$/MotherBoard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PCBuilder.iml" filepath="$PROJECT_DIR$/PCBuilder.iml" />
     </modules>
   </component>
 </project>
