@@ -80,7 +80,7 @@ El nombre general de los setters y los getters es accessors y mutators. El acces
 La diferencia entre double y float es que double duplica la precisión del número (mayor cantidad de decimales).
 Un método estático es uno que le pertenece a la plantilla (Clase). Los objetos no pueden usar static, no se puede acceder desde los objetos.
 Los constructores se llaman igual que la clase y no llevan tipo de dato. El primer uso es para tener valores por defecto.
-Polimorfismo es cuando tenemos muchas cosas de muchas formas. Es decir, los métodos que tienen varios con el mismo nombre pero diferentes métodos.
+Polimorfismo es cuando tenemos muchas cosas de muchas formas. Es decir, los métodos que tienen varios con el mismo nombre pero diferentes métodos. El polimorfismo puede ser 1. distinto según tipos de datos o parámetros, la otra es a través de la herencia.
 Los dos pilares de POO son el encapsulamiento y el polimorfismo.
 Paradigma estructurado es determinar un problema, determinar la lista de pasos, seguir ordenadamente esos pasos.
 
@@ -90,3 +90,14 @@ Hay subcategorías.
 Padre e hijo. A la clase generalizada se le llama Superclase Clase Padre. A la clase específica se le llama Subclase o Clase Hijo. Se heredan todos los Atributos y Métodos, pero se preserva el sentido del Encapsulamiento.
 Cada clase es una caja. Cada caja tiene 3 partes: el nombre de la clase, atributos y métodos. Las flechas hacia arriba (en blanco) indica que la clase hereda de otra clase. Menos es privado, más es público.
 Ejercicio de clase: hacer Fortnite en papel
+
+## 2/04/24
+El juego de Fortnite es un objeto como tal, un objeto abstracto.
+Lista de objetos: game, player, gamemode, match, lobby, battle bus, map, item, storm, construction, result
+Entraremos a hablar de los packages (paquetes). Los packages se escriben en minúscula. Se recomienda que la menor cantidad de clases vayan en el package source, si es que ninguno.
+n-tuple es n cantidad de datos separados y distintos pero que juntos tienen un significado.
+Una clase hija puede redefinir un método del papá y eso se llama overwrite. 
+La tercer forma de polimorfismo es cuando un objeto tiene más de una clase (tipo de dato). Se ocupa la palabra clave reservada "instanceof".
+Si algo es estático, es de la clase y no de los objetos. Si algo no es estático, es de los objetos y no de la clase. Lo de la clase solo se lleva con las clases, y los objetos solo con los objetos.
+`System.in` es estático, no es un método, es un atributo estático y público de la clase System
+Tarea: comenzar algunas de las opciones y alguna implementación del juego
