@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="74664636-2c82-4d6e-985a-4f4f1c4c0e6c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Fortnite/src/Fornite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fortnite/src/items/Healing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fortnite/src/items/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fortnite/src/items/Material.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fortnite/src/items/Weapon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fortnite/src/locations/Construction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fortnite/src/locations/Map.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fortnite/src/locations/Storm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fortnite/src/logistics/GameMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fortnite/src/logistics/Lobby.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fortnite/src/logistics/Match.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fortnite/src/logistics/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fortnite/src/logistics/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Herencia/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Herencia/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Herencia/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Herencia/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Herencia/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Herencia/src/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Herencia/src/Bird.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Herencia/src/Mammal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Libro/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Libro/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Libro/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Libro/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Libro/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Libro/src/Autor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Libro/src/Editorial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Libro/src/Libro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PCBuilder/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PCBuilder/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PCBuilder/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PCBuilder/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PCBuilder/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PCBuilder/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PCBuilder/src/CPU.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PCBuilder/src/Motherboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PCBuilder/src/OS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PCBuilder/src/PCBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PCBuilder/src/PSU.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PCBuilder/src/RAM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PCBuilder/src/Storage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PrimerPrograma/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PrimerPrograma/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PrimerPrograma/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PrimerPrograma/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PrimerPrograma/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PrimerPrograma/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2fIac6wLHtpHMgid5tBmBbEocO2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/media/ae22mp/Disco Externo/Code/GitHub/laboratorio-04-polimorfismo-y-clases-abstractas-grupo-09-Alex22sv/lab04",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="74664636-2c82-4d6e-985a-4f4f1c4c0e6c" name="Changes" comment="" />
+      <created>1713491123169</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713491123169</updated>
+      <workItem from="1713491125699" duration="43000" />
+    </task>
+    <servers />
+  </component>
+</project>
