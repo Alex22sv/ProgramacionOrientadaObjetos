@@ -30,7 +30,11 @@ public class Game {
         TimeUnit.SECONDS.sleep(10); //esta línea podría salir muy mal, según sistema operativo, por eso está thrown exception
         System.out.println("Let the match begin!!");
         run(match);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> refs/remotes/origin/main
     }
     private static void receivePlayers(int n){
         for(int i = 0; i < n; ++i){

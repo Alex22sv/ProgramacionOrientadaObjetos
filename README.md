@@ -95,6 +95,7 @@ Ejercicio de clase: hacer Fortnite en papel
 El juego de Fortnite es un objeto como tal, un objeto abstracto.
 Lista de objetos: game, player, gamemode, match, lobby, battle bus, map, item, storm, construction, result
 Entraremos a hablar de los packages (paquetes). Los packages se escriben en minúscula. Se recomienda que la menor cantidad de clases vayan en el package source, si es que ninguno.
+<<<<<<< HEAD
 C++ lee de arriba para abajo, Java no importa si la función está arriba o abajo al compilar
 El ID del mapa podría ser estático, es justificable, por el contexto del juego, se mantiene igual. Pero por ejemplo en Smash hay cambios de mapas durante el juego, no es recomendable usar estático. Referencia a la cardinalidad en base de datos
 
@@ -130,3 +131,11 @@ String hereda de Object. Esto es posible. Java no permite múltiples padres, per
 nextLine() obtiene todo el String, next() obtiene todo lo que tiene hasta el espacio.
 sn.nextLine() nos ayuda a limpiar el buffer, por ejemplo al pedir entero.
 El parcial evaluará try-catch.
+=======
+n-tuple es n cantidad de datos separados y distintos pero que juntos tienen un significado.
+Una clase hija puede redefinir un método del papá y eso se llama overwrite. 
+La tercer forma de polimorfismo es cuando un objeto tiene más de una clase (tipo de dato). Se ocupa la palabra clave reservada "instanceof".
+Si algo es estático, es de la clase y no de los objetos. Si algo no es estático, es de los objetos y no de la clase. Lo de la clase solo se lleva con las clases, y los objetos solo con los objetos.
+`System.in` es estático, no es un método, es un atributo estático y público de la clase System
+Tarea: comenzar algunas de las opciones y alguna implementación del juego
+>>>>>>> refs/remotes/origin/main

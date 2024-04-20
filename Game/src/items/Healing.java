@@ -1,5 +1,4 @@
 package items;
-<<<<<<< HEAD
 //import items.Item;
 
 public class Healing extends Item {
@@ -30,24 +29,5 @@ public class Healing extends Item {
             System.out.println("<No stock available>");
         }
     }
-
-}
- 14 changes: 14 additions & 0 deletions14  
-Game/src/items/Item.java
-@@ -0,0 +1,14 @@
-package items;
-=======
->>>>>>> refs/remotes/origin/main
-
-public class Item {
-    private int ID;
-    private String name;
-    public Item(int ID, String name){
-        this.ID = ID;
-        this.name = name;
-    }
-    public int getID(){ return ID; }
-    public void setID(int ID) { this.ID = ID; }
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
+    
 }
