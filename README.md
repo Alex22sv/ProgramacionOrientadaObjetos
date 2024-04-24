@@ -95,7 +95,6 @@ Ejercicio de clase: hacer Fortnite en papel
 El juego de Fortnite es un objeto como tal, un objeto abstracto.
 Lista de objetos: game, player, gamemode, match, lobby, battle bus, map, item, storm, construction, result
 Entraremos a hablar de los packages (paquetes). Los packages se escriben en minúscula. Se recomienda que la menor cantidad de clases vayan en el package source, si es que ninguno.
-<<<<<<< HEAD
 C++ lee de arriba para abajo, Java no importa si la función está arriba o abajo al compilar
 El ID del mapa podría ser estático, es justificable, por el contexto del juego, se mantiene igual. Pero por ejemplo en Smash hay cambios de mapas durante el juego, no es recomendable usar estático. Referencia a la cardinalidad en base de datos
 
@@ -131,11 +130,24 @@ String hereda de Object. Esto es posible. Java no permite múltiples padres, per
 nextLine() obtiene todo el String, next() obtiene todo lo que tiene hasta el espacio.
 sn.nextLine() nos ayuda a limpiar el buffer, por ejemplo al pedir entero.
 El parcial evaluará try-catch.
-=======
 n-tuple es n cantidad de datos separados y distintos pero que juntos tienen un significado.
 Una clase hija puede redefinir un método del papá y eso se llama overwrite. 
 La tercer forma de polimorfismo es cuando un objeto tiene más de una clase (tipo de dato). Se ocupa la palabra clave reservada "instanceof".
 Si algo es estático, es de la clase y no de los objetos. Si algo no es estático, es de los objetos y no de la clase. Lo de la clase solo se lleva con las clases, y los objetos solo con los objetos.
 `System.in` es estático, no es un método, es un atributo estático y público de la clase System
 Tarea: comenzar algunas de las opciones y alguna implementación del juego
->>>>>>> refs/remotes/origin/main
+## 23/04/2024
+### Patrones de diseños
+Tarea: hacer un videojuego de Snake para ver lo de matrices bidimensionales.
+Los patrones de diseño son soluciones bien descritas para un problema de software común. Están divididos en: patrones creacionales, estructurales y de comportamiento.
+Beneficios: proveen un estándar para resolver un problema recurrente, por lo que se ahorra adecuadamente. Promueve la reusabilidad (el código se robustece y se vuelve altamente escalable y sostenible). Como ya están definidos, nuestro código se vuelve fácil de entender y depurar.
+#### Patrones creacionales: singleton
+Ejemplo: los Database Object. Tenemos una base de datos usada en dos programas: conectarse a la database, consultar tabla empleados, añadir nuevo empleado, eliminar empleados. La base de datos será un objeto. 
+Singletone es crear un objeto único para una clase, UN SOLO OBJETO que debería existir una sola vez. O también ej. sólo debería haber un gobierno.
+Singleton design pattern: "ensure that a class has only one instance and provide a global point of access to it."
+Singleton se llama a sí mismo, tiene una instancia Singleton privado, un constructor privado.
+Sólo yo puedo crear una instancia y sólo la voy a crear una vez. Hay un método público para devolver la instancia que cree, sin poder sobreescribir
+Static no necesita que haya instancia, se ocupa singleton cuando necesitamos que haya instancia.
+**Eager vs Lazy:** Existen dos tipos principales de clases singleton: eager y lazy.
+Los Eager Singleton se inicializan al ejecutar el código, mientras que los Lazy Singleton se inicializan hasta que se utilizan.
+Factory pattern: 
