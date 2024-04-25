@@ -141,7 +141,7 @@ Tarea: comenzar algunas de las opciones y alguna implementación del juego
 Tarea: hacer un videojuego de Snake para ver lo de matrices bidimensionales.
 Los patrones de diseño son soluciones bien descritas para un problema de software común. Están divididos en: patrones creacionales, estructurales y de comportamiento.
 Beneficios: proveen un estándar para resolver un problema recurrente, por lo que se ahorra adecuadamente. Promueve la reusabilidad (el código se robustece y se vuelve altamente escalable y sostenible). Como ya están definidos, nuestro código se vuelve fácil de entender y depurar.
-#### Patrones creacionales: singleton
+#### Patrones creacionales: Singleton
 Ejemplo: los Database Object. Tenemos una base de datos usada en dos programas: conectarse a la database, consultar tabla empleados, añadir nuevo empleado, eliminar empleados. La base de datos será un objeto. 
 Singletone es crear un objeto único para una clase, UN SOLO OBJETO que debería existir una sola vez. O también ej. sólo debería haber un gobierno.
 Singleton design pattern: "ensure that a class has only one instance and provide a global point of access to it."
@@ -151,3 +151,10 @@ Static no necesita que haya instancia, se ocupa singleton cuando necesitamos que
 **Eager vs Lazy:** Existen dos tipos principales de clases singleton: eager y lazy.
 Los Eager Singleton se inicializan al ejecutar el código, mientras que los Lazy Singleton se inicializan hasta que se utilizan.
 Factory pattern: 
+#### Patrones creacionales: Factory
+Se usa cuando tenemos una SUperclase con múltiples Subclases, y desseamos generar alguna de las Subclases basándonos en la entrada de un usuario. 
+Esto evita el uso de switch-cases.
+Se realiza la implementación de una interfaz. Una clase que genera variantes del producto (ej. variantes de estudiantes como grados, post grados, maestrías y doctorados).
+Factory es la idea de una fábrica abstraída, por lo que Factory es una clase abstracta. Entonces, de Factory heredan fábricas concretas, la que construye estudiantes de grado, de maestrías y doctorados.
+Puedo usar la interfaz como clase para darle otra forma (polimorfismo) a un objeto que implementa la interfaz.
+El concepto general de las banderas (flag) es para registrar dos estados distintos.

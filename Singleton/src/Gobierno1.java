@@ -1,19 +1,19 @@
-public class Gobierno {
-    private Gobierno instancia;
+public class Gobierno1 {
+    private static Gobierno1 instancia;
     private String lider;
     private String pais;
     private String sistemaPolitico;
-    private Gobierno(String lider, String pais, String sistemaPolitico) {
+    private Gobierno1(String lider, String pais, String sistemaPolitico) {
         this.lider = lider;
         this.pais = pais;
         this.sistemaPolitico = sistemaPolitico;
     }
 
-    public Gobierno getInstancia() {
+    public static Gobierno1 getInstancia() {
         if(instancia == null) {
             // Lazy Singletone
             // Se inicializa hasta cuando es llamada
-            instancia = new Gobierno("Bukele", "El Salvador", "Yes");
+            instancia = new Gobierno1("Bukele", "El Salvador", "Yes");
         }
         return instancia;
     }
@@ -23,4 +23,9 @@ public class Gobierno {
     public void somethingSomethingMoney(){
         // yes
     }
+
+    // Los setters dejan de tener sentido, porque no se puede modificar.
+    public String getLider() {return lider;}
+    public String getPais() {return pais;}
+    public String getSistemaPolitico() {return sistemaPolitico;}
 }
