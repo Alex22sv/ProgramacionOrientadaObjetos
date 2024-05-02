@@ -15,12 +15,10 @@ public class Library {
         loadBooks();
         loadRooms();
     }
-
     public Library(ArrayList<Room> rooms, ArrayList<Book> books) {
         this.rooms = rooms;
         this.books = books;
     }
-
     public void loadRooms() {
         // Creating rooms of the first floor and saving them in the list
         for(int i = 1; i <= 3; i++) {
@@ -40,7 +38,6 @@ public class Library {
             rooms.add(newRoom);
         }
     }
-
     public void loadBooks() {
         Book book1 = new Book("ISBN 0-7645-2641-3", "Asesinato en el Orient Express", "Agatha Christie", Floor.FIRST_FLOOR, false);
         Book book2 = new Book("ISBN 1-2345-6789-0", "El Gran Gatsby", "F. Scott Fitzgerald", Floor.SECOND_FLOOR, true);
@@ -64,7 +61,6 @@ public class Library {
         books.add(book9);
         books.add(book10);
     }
-
     public void printReservedRooms() {
         for (Room room: rooms) {
             if(room.isReserved()) {
@@ -73,7 +69,6 @@ public class Library {
             } else continue;
         }
     }
-
     public void printBorrowedBooks() {
         for (int i = 0; i < books.size(); i++) {
             if(books.get(i).isBorrowed()){
@@ -82,7 +77,6 @@ public class Library {
             }
         }
     }
-
     public void printAvailableRooms() {
         for (Room room: rooms) {
             if(!room.isReserved()) {
@@ -91,7 +85,6 @@ public class Library {
             } else continue;
         }
     }
-
     public void printAvailableBooks() {
         for (int i = 0; i < books.size(); i++) {
             if(!books.get(i).isBorrowed()){
@@ -100,7 +93,6 @@ public class Library {
             }
         }
     }
-
     public Room obtainRoom(int identifier) {
         for (Room room: rooms) {
             if(room.getIdentifier() == identifier)
@@ -108,10 +100,9 @@ public class Library {
         }
         return null;
     }
-
     public Book obtainBook(String ISBN) {
         for (int i = 0; i < books.size(); i++) {
-            if(ISBN == books.get(i).getISBN()){
+            if(books.get(i).getISBN().equals(ISBN)){
                 return books.get(i);
             }
         }

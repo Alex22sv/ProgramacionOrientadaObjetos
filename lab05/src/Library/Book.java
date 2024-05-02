@@ -20,17 +20,34 @@ public class Book implements Interfaces.BookLending {
         this.floor = floor;
         this.isBorrowed = isBorrowed;
     }
+    public void displayBookInformation(){
+        System.out.println("Book ISBN: " + this.ISBN);
+        System.out.println("Title: " + this.title);
+        System.out.println("Author: " + this.author);
+        System.out.println("Floor: " + this.floor);
+    }
     @Override
-    public void lendBook(String ISBN) {
+    public void lendBook() {
+        if(!this.isBorrowed){
+            this.isBorrowed = true;
+            System.out.println("The book has been borrowed.");
+        } else {
+            System.out.println("This book is already borrowed.");
+        }
+    }
+    @Override
+    public void returnBook() {
+        if(this.isBorrowed){
+            this.isBorrowed = false;
+            System.out.println("The book has been returned.");
+        } else {
+            System.out.println("The book is not borrowed.");
+        }
 
     }
     @Override
-    public void bringBackBook() {
-
-    }
-    @Override
-    public boolean isBookBorrowed(String ISBN) {
-        return false;
+    public boolean isBookBorrowed() {
+        return this.isBorrowed;
     }
     public String getISBN() {return ISBN;}
     public void setISBN(String ISBN) {this.ISBN = ISBN;}

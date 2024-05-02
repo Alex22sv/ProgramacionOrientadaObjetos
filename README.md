@@ -152,9 +152,16 @@ Static no necesita que haya instancia, se ocupa singleton cuando necesitamos que
 Los Eager Singleton se inicializan al ejecutar el código, mientras que los Lazy Singleton se inicializan hasta que se utilizan.
 Factory pattern: 
 #### Patrones creacionales: Factory
-Se usa cuando tenemos una SUperclase con múltiples Subclases, y desseamos generar alguna de las Subclases basándonos en la entrada de un usuario. 
+Se usa cuando tenemos una Superclase con múltiples Subclases, y desseamos generar alguna de las Subclases basándonos en la entrada de un usuario. 
 Esto evita el uso de switch-cases.
 Se realiza la implementación de una interfaz. Una clase que genera variantes del producto (ej. variantes de estudiantes como grados, post grados, maestrías y doctorados).
 Factory es la idea de una fábrica abstraída, por lo que Factory es una clase abstracta. Entonces, de Factory heredan fábricas concretas, la que construye estudiantes de grado, de maestrías y doctorados.
 Puedo usar la interfaz como clase para darle otra forma (polimorfismo) a un objeto que implementa la interfaz.
 El concepto general de las banderas (flag) es para registrar dos estados distintos.
+**Fabricar múltiples variantes de objetos**
+Producto abstracto A: tipo de estudio (licenciatura, maestría, doctorado)
+Producto abstracto B: modalidad (virtual/presencial)
+Factory no es lo mismo que builder.
+**Builder** 
+Se ocupa cuando tienen diferentes partes que pueden tener variaciones, variantes internas al producto.
+Es buena práctica llamar builders a los builders y factory a los factories; director es opcional.

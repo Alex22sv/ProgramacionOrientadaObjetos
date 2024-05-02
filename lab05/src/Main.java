@@ -61,14 +61,19 @@ public class Main {
                     library.printReservedRooms();
                     break;
                 case 3:
-                    System.out.println("Please specify the book ISBN: ");
-                    library.obtainBook(sc.nextLine());
+                    System.out.println("Please specify the room identifier: ");
+                    library.obtainRoom(sc.nextInt()).displayRoomInformation();
+                    sc.nextLine();
                     break;
                 case 4:
-
+                    System.out.println("What room do you want to reserve? ");
+                    library.obtainRoom(sc.nextInt()).reserveRoom();
+                    sc.nextLine();
                     break;
                 case 5:
-                    // Cancel a room reservation
+                    System.out.println("What room do you want to cancel? ");
+                    library.obtainRoom(sc.nextInt()).cancelRoomReservation();
+                    sc.nextLine();
                     break;
                 case 6:
                     keepInSystem = false;
@@ -104,7 +109,8 @@ public class Main {
                     library.printBorrowedBooks();
                     break;
                 case 3:
-                    // Show information about a specific book
+                    System.out.println("Please specify the book ISBN: ");
+                    library.obtainBook(sc.nextLine()).displayBookInformation();
                     break;
                 case 4:
                     // Lend book
