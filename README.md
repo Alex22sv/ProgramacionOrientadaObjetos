@@ -165,3 +165,12 @@ Factory no es lo mismo que builder.
 **Builder** 
 Se ocupa cuando tienen diferentes partes que pueden tener variaciones, variantes internas al producto.
 Es buena práctica llamar builders a los builders y factory a los factories; director es opcional.
+Se ocupan builders concretos para cada variante del producto, que puede realizar pasos de diferentes maneras.
+
+#### Patrones estructurales: Adapter
+No es de creación de objetos. Es una forma de hacer que varias cosas funcionen entre sí.
+Adapter permite que objetos con interfaces incompatibles colaboren entre sí. Se requiere de un adaptador y conversor.
+1. El adaptor obtiene una interfaz compatible con uno de los objetos existentes.
+2. Utilizando esta interfaz, el objeto existente puede invocar con seguridad los métodos del adaptador.
+3. Al recibir una llamada, el adaptador pasa la solicitud al segundo objeto, pero en un formato y orden que este segundo objeto espera.
+        
