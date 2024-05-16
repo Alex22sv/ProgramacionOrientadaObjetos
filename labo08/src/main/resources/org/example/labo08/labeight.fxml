@@ -20,10 +20,10 @@
       </ImageView>
 
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f3fad9" height="531.0" layoutX="10.0" layoutY="56.0" onMouseClicked="#onPolloAumento" stroke="BLACK" strokeDashOffset="50.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="100.0" strokeType="OUTSIDE" width="1180.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f89b5d" height="250.0" layoutX="20.0" layoutY="65.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="575.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f89b5d" height="250.0" layoutX="611.0" layoutY="65.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="575.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f89b5d" height="250.0" layoutX="20.0" layoutY="325.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="575.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f89b5d" height="250.0" layoutX="611.0" layoutY="325.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="575.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f89b5d" height="250.0" layoutX="20.0" layoutY="65.0" stroke="BLACK" strokeDashOffset="50.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="100.0" strokeType="OUTSIDE" width="575.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f89b5d" height="250.0" layoutX="611.0" layoutY="65.0" stroke="BLACK" strokeDashOffset="50.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="100.0" strokeType="OUTSIDE" width="575.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f89b5d" height="250.0" layoutX="20.0" layoutY="325.0" stroke="BLACK" strokeDashOffset="50.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="100.0" strokeType="OUTSIDE" width="575.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f89b5d" height="250.0" layoutX="611.0" layoutY="325.0" stroke="BLACK" strokeDashOffset="50.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="100.0" strokeType="OUTSIDE" width="575.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2fad7" height="191.0" layoutX="8.0" layoutY="598.0" stroke="BLACK" strokeDashOffset="50.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="100.0" strokeType="OUTSIDE" width="286.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2fad7" height="191.0" layoutX="309.0" layoutY="598.0" stroke="BLACK" strokeDashOffset="50.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="100.0" strokeType="OUTSIDE" width="286.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2fad7" height="195.0" layoutX="616.0" layoutY="596.0" stroke="BLACK" strokeDashOffset="50.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="100.0" strokeType="OUTSIDE" width="575.0" />
@@ -191,7 +191,7 @@
             <Font size="24.0" />
          </font>
       </TextField>
-      <Label layoutX="638.0" layoutY="700.0" text="Total: $0.00" fx:id="precioTotal">
+      <Label fx:id="precioTotal" layoutX="638.0" layoutY="700.0" text="Total: $0.00">
          <font>
             <Font size="24.0" />
          </font>

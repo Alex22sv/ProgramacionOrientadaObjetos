@@ -81,7 +81,7 @@ public class HelloController {
             return;
         }
         // Confirmar compra
-        float subtotal = Float.parseFloat(subtotalPapas.getText().substring(1))+Float.parseFloat(subtotalVegetales.getText().substring(1))+Float.parseFloat(subtotalVegetales.getText().substring(1))+Float.parseFloat(subtotalPollo.getText().substring(1))+Float.parseFloat(subtotalCarne.getText().substring(1));
+        float subtotal = Float.parseFloat(subtotalPapas.getText().substring(1))+Float.parseFloat(subtotalVegetales.getText().substring(1))+Float.parseFloat(subtotalCarne.getText().substring(1))+Float.parseFloat(subtotalPollo.getText().substring(1));
         float descuento = 0.00F;
         String metodoPago = "";
         if(empleadoCheck.isSelected()&&!estudianteCheck.isSelected()){
