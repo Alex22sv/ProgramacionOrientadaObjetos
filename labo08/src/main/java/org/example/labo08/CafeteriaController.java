@@ -41,9 +41,8 @@ public class HelloController {
     private Button botonComprar;
     @FXML
     private Button botonLimpiar;
-
     @FXML
-    protected void onClickBotonComprar() {
+    protected boolean validarNombre(){
         // Validar nombre
         if(inputNombre.getText().equals("")||inputNombre.getText().length()<=6) {
             Alert alerta = new Alert(Alert.AlertType.WARNING);
@@ -51,8 +50,10 @@ public class HelloController {
             alerta.setTitle("Cafetería UCA");
             alerta.setContentText("Debe digitar su nombre.");
             alerta.showAndWait();
-            return;
-        }
+            return false;
+        } else return true;
+    }
+    protected boolean validarArticulos(){
         // Validar que tenga artículos seleccionados
         if((Float.parseFloat(subtotalPapas.getText().substring(1))==0.00)&&(Float.parseFloat(subtotalCarne.getText().substring(1))==0.00)&&(Float.parseFloat(subtotalVegetales.getText().substring(1))==0.00)&&(Float.parseFloat(subtotalPollo.getText().substring(1))==0.00)) {
             Alert alerta = new Alert(Alert.AlertType.ERROR);
@@ -60,8 +61,11 @@ public class HelloController {
             alerta.setTitle("Cafetería UCA");
             alerta.setContentText("Debe seleccionar al menos un artículo para comprar.");
             alerta.showAndWait();
-            return;
-        }
+            return false;
+        } else return true;
+    }
+    @FXML
+    protected boolean validarTipoCliente(){
         // Validar selección de tipo de cliente
         if(!estudianteCheck.isSelected()&&!empleadoCheck.isSelected()){
             Alert alerta = new Alert(Alert.AlertType.ERROR);
@@ -69,8 +73,11 @@ public class HelloController {
             alerta.setTitle("Cafetería UCA");
             alerta.setContentText("Debe seccionar un tipo de cliente.");
             alerta.showAndWait();
-            return;
-        }
+            return false;
+        } else return true;
+    }
+    @FXML
+    protected boolean validarMetodoPago(){
         // Validar selección de método de pago
         if(!efectivoCheck.isSelected()&&!tarjetaCheck.isSelected()){
             Alert alerta = new Alert(Alert.AlertType.ERROR);
@@ -78,25 +85,30 @@ public class HelloController {
             alerta.setTitle("Cafetería UCA");
             alerta.setContentText("Debe seccionar un método de pago.");
             alerta.showAndWait();
-            return;
+            return false;
+        } else return true;
+    }
+    @FXML
+    protected void onClickBotonComprar() {
+        if(validarNombre()&&validarArticulos()&&validarTipoCliente()&&validarMetodoPago()){
+            // Confirmar compra
+            float subtotal = Float.parseFloat(subtotalPapas.getText().substring(1))+Float.parseFloat(subtotalVegetales.getText().substring(1))+Float.parseFloat(subtotalCarne.getText().substring(1))+Float.parseFloat(subtotalPollo.getText().substring(1));
+            float descuento = 0.00F;
+            String metodoPago;
+            if(empleadoCheck.isSelected()&&!estudianteCheck.isSelected()){
+                descuento = (float) (subtotal*0.1);
+            }
+            if(efectivoCheck.isSelected()){
+                metodoPago = "Efectivo";
+            } else {
+                metodoPago = "Tarjeta";
+            }
+            Alert confirmacionCompra = new Alert(Alert.AlertType.INFORMATION);
+            confirmacionCompra.setHeaderText(null);
+            confirmacionCompra.setTitle("Cafetería UCA");
+            confirmacionCompra.setContentText("Bienvenido "+inputNombre.getText()+"\nSubtotal: $"+(subtotal)+"\nDescuento: $"+(descuento)+"\nTotal: $"+(subtotal-descuento)+"\nForma de pago: "+metodoPago+"\nGracias por su compra!");
+            confirmacionCompra.showAndWait();
         }
-        // Confirmar compra
-        float subtotal = Float.parseFloat(subtotalPapas.getText().substring(1))+Float.parseFloat(subtotalVegetales.getText().substring(1))+Float.parseFloat(subtotalCarne.getText().substring(1))+Float.parseFloat(subtotalPollo.getText().substring(1));
-        float descuento = 0.00F;
-        String metodoPago = "";
-        if(empleadoCheck.isSelected()&&!estudianteCheck.isSelected()){
-            descuento = (float) (subtotal*0.1);
-        }
-        if(efectivoCheck.isSelected()){
-            metodoPago = "Efectivo";
-        } else {
-            metodoPago = "Tarjeta";
-        }
-        Alert confirmacionCompra = new Alert(Alert.AlertType.INFORMATION);
-        confirmacionCompra.setHeaderText(null);
-        confirmacionCompra.setTitle("Cafetería UCA");
-        confirmacionCompra.setContentText("Bienvenido "+inputNombre.getText()+"\nSubtotal: $"+(subtotal)+"\nDescuento: $"+(descuento)+"\nTotal: $"+(subtotal-descuento)+"\nForma de pago: "+metodoPago+"\nGracias por su compra!");
-        confirmacionCompra.showAndWait();
     }
     @FXML
     protected void onClickBotonLimpiar() {
