@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AbstractFactory/AbstractFactory.iml" filepath="$PROJECT_DIR$/AbstractFactory/AbstractFactory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Adapter/Adapter.iml" filepath="$PROJECT_DIR$/Adapter/Adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Builder/Builder.iml" filepath="$PROJECT_DIR$/Builder/Builder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ejericicio1RepasoParcial1/Ejericicio1RepasoParcial1.iml" filepath="$PROJECT_DIR$/Ejericicio1RepasoParcial1/Ejericicio1RepasoParcial1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Factory/Factory.iml" filepath="$PROJECT_DIR$/Factory/Factory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Fortnite/Fortnite.iml" filepath="$PROJECT_DIR$/Fortnite/Fortnite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Game/Game.iml" filepath="$PROJECT_DIR$/Game/Game.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Herencia/Herencia.iml" filepath="$PROJECT_DIR$/Herencia/Herencia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab06/Lab06.iml" filepath="$PROJECT_DIR$/Lab06/Lab06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Libro/Libro.iml" filepath="$PROJECT_DIR$/Libro/Libro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PCBuilder/PCBuilder.iml" filepath="$PROJECT_DIR$/PCBuilder/PCBuilder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PrimerPrograma/PrimerPrograma.iml" filepath="$PROJECT_DIR$/PrimerPrograma/PrimerPrograma.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProgramacionOrientadaObjetos.iml" filepath="$PROJECT_DIR$/ProgramacionOrientadaObjetos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProyectoRepasoParcial1/ProyectoRepasoParcial1.iml" filepath="$PROJECT_DIR$/ProyectoRepasoParcial1/ProyectoRepasoParcial1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Singleton/Singleton.iml" filepath="$PROJECT_DIR$/Singleton/Singleton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab05/lab05.iml" filepath="$PROJECT_DIR$/lab05/lab05.iml" />
+    </modules>
+  </component>
+</project>

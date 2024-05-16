@@ -173,4 +173,18 @@ Adapter permite que objetos con interfaces incompatibles colaboren entre sí. Se
 1. El adaptor obtiene una interfaz compatible con uno de los objetos existentes.
 2. Utilizando esta interfaz, el objeto existente puede invocar con seguridad los métodos del adaptador.
 3. Al recibir una llamada, el adaptador pasa la solicitud al segundo objeto, pero en un formato y orden que este segundo objeto espera.
-        
+
+#### Patrones estructurales: Composite
+Composite cobra sentido cuando el modelo central de una aplicación tiene forma de árbol.
+El uso de árbol es recursiv. Ejemplo: los paquetes que dentro puede contener productos o más paquetes. Los árboles no son estructuras viables para un simple bucle.
+Todo el árbol es un composite.
+Se requiere interpretar Paquetes y Productos con una interfaz común que contenga un método para realizar cálculos.
+El composite, que es colección, recorre sus propios ítems y darles las órdenes
+
+#### Patrones 
+Reutilización: hace referencia a la reutilización de componentes
+
+
+#### Patrones estructurales: Observer
+Es básicamente YouTUbe, el método de subscripción.
+Ocupamos un publisher
