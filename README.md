@@ -188,3 +188,6 @@ Reutilización: hace referencia a la reutilización de componentes
 #### Patrones estructurales: Observer
 Es básicamente YouTUbe, el método de subscripción.
 Ocupamos un publisher
+
+#### Patrones estructurales: Chain of responsability
+Cada proceso es un objeto. Los handlers concretos son las etapas

@@ -51,6 +51,7 @@ public class HelloController {
             alerta.setTitle("Cafetería UCA");
             alerta.setContentText("Debe digitar su nombre.");
             alerta.showAndWait();
+            return;
         }
         // Validar que tenga artículos seleccionados
         if((Float.parseFloat(subtotalPapas.getText().substring(1))==0.00)&&(Float.parseFloat(subtotalCarne.getText().substring(1))==0.00)&&(Float.parseFloat(subtotalVegetales.getText().substring(1))==0.00)&&(Float.parseFloat(subtotalPollo.getText().substring(1))==0.00)) {
@@ -59,6 +60,7 @@ public class HelloController {
             alerta.setTitle("Cafetería UCA");
             alerta.setContentText("Debe seleccionar al menos un artículo para comprar.");
             alerta.showAndWait();
+            return;
         }
         // Validar selección de tipo de cliente
         if(!estudianteCheck.isSelected()&&!empleadoCheck.isSelected()){
@@ -67,6 +69,7 @@ public class HelloController {
             alerta.setTitle("Cafetería UCA");
             alerta.setContentText("Debe seccionar un tipo de cliente.");
             alerta.showAndWait();
+            return;
         }
         // Validar selección de método de pago
         if(!efectivoCheck.isSelected()&&!tarjetaCheck.isSelected()){
@@ -75,6 +78,7 @@ public class HelloController {
             alerta.setTitle("Cafetería UCA");
             alerta.setContentText("Debe seccionar un método de pago.");
             alerta.showAndWait();
+            return;
         }
         // Confirmar compra
         float subtotal = Float.parseFloat(subtotalPapas.getText().substring(1))+Float.parseFloat(subtotalVegetales.getText().substring(1))+Float.parseFloat(subtotalVegetales.getText().substring(1))+Float.parseFloat(subtotalPollo.getText().substring(1))+Float.parseFloat(subtotalCarne.getText().substring(1));
