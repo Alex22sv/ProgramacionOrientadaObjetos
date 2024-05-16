@@ -3,7 +3,7 @@ package org.example.labo08;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
-public class HelloController {
+public class CafeteriaController {
     private float precioPapas = 1.25F;
     private float precioCarne = 2.25F;
     private float precioPollo = 1.75F;
@@ -41,6 +41,29 @@ public class HelloController {
     private Button botonComprar;
     @FXML
     private Button botonLimpiar;
+
+    @FXML
+    protected void onClickBotonComprar() {
+        if(validarNombre()&&validarArticulos()&&validarTipoCliente()&&validarMetodoPago()){
+            // Confirmar compra
+            float subtotal = Float.parseFloat(subtotalPapas.getText().substring(1))+Float.parseFloat(subtotalVegetales.getText().substring(1))+Float.parseFloat(subtotalCarne.getText().substring(1))+Float.parseFloat(subtotalPollo.getText().substring(1));
+            float descuento = 0.00F;
+            String metodoPago;
+            if(empleadoCheck.isSelected()&&!estudianteCheck.isSelected()){
+                descuento = (float) (subtotal*0.1);
+            }
+            if(efectivoCheck.isSelected()){
+                metodoPago = "Efectivo";
+            } else {
+                metodoPago = "Tarjeta";
+            }
+            Alert confirmacionCompra = new Alert(Alert.AlertType.INFORMATION);
+            confirmacionCompra.setHeaderText(null);
+            confirmacionCompra.setTitle("Cafetería UCA");
+            confirmacionCompra.setContentText("Bienvenido "+inputNombre.getText()+"\nSubtotal: $"+(subtotal)+"\nDescuento: $"+(descuento)+"\nTotal: $"+(subtotal-descuento)+"\nForma de pago: "+metodoPago+"\nGracias por su compra!");
+            confirmacionCompra.showAndWait();
+        }
+    }
     @FXML
     protected boolean validarNombre(){
         // Validar nombre
@@ -87,28 +110,6 @@ public class HelloController {
             alerta.showAndWait();
             return false;
         } else return true;
-    }
-    @FXML
-    protected void onClickBotonComprar() {
-        if(validarNombre()&&validarArticulos()&&validarTipoCliente()&&validarMetodoPago()){
-            // Confirmar compra
-            float subtotal = Float.parseFloat(subtotalPapas.getText().substring(1))+Float.parseFloat(subtotalVegetales.getText().substring(1))+Float.parseFloat(subtotalCarne.getText().substring(1))+Float.parseFloat(subtotalPollo.getText().substring(1));
-            float descuento = 0.00F;
-            String metodoPago;
-            if(empleadoCheck.isSelected()&&!estudianteCheck.isSelected()){
-                descuento = (float) (subtotal*0.1);
-            }
-            if(efectivoCheck.isSelected()){
-                metodoPago = "Efectivo";
-            } else {
-                metodoPago = "Tarjeta";
-            }
-            Alert confirmacionCompra = new Alert(Alert.AlertType.INFORMATION);
-            confirmacionCompra.setHeaderText(null);
-            confirmacionCompra.setTitle("Cafetería UCA");
-            confirmacionCompra.setContentText("Bienvenido "+inputNombre.getText()+"\nSubtotal: $"+(subtotal)+"\nDescuento: $"+(descuento)+"\nTotal: $"+(subtotal-descuento)+"\nForma de pago: "+metodoPago+"\nGracias por su compra!");
-            confirmacionCompra.showAndWait();
-        }
     }
     @FXML
     protected void onClickBotonLimpiar() {
