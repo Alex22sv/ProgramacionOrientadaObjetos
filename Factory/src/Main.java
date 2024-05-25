@@ -8,7 +8,7 @@ public class Main {
         while(flag){
             System.out.println("Hello, what do you want to study?");
             System.out.println("1. Undergraduate program");
-            System.out.println("2. Master ṕrogram");
+            System.out.println("2. Master program");
             System.out.println("3. PhD program");
             System.out.println("4. Leave system");
             Scanner scanner = new Scanner(System.in);
