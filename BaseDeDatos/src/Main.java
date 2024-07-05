@@ -49,6 +49,7 @@ public class Main {
                         eliminarTabla();
                         break;
                     case 7:
+                        connection.close();
                         flag = false;
                         System.exit(0);
                 }
@@ -98,9 +99,11 @@ public class Main {
         }
     }
     private static void actualizarEstudiante() throws SQLException{
-        Statement statement = connection.createStatement();
-        statement.execute("UPDATE Estudiantes SET Universidad = 'DB' WHERE ID = 1");
-        System.out.println("Estudiante actualizado");
+        PreparedStatement preparedStatement = connection.prepareStatement("UPDATE Estudiantes SET Universidad = ? WHERE ID = ?");
+        preparedStatement.setString(1, "UDB");
+        preparedStatement.setInt(2, 1);
+        int affectedRows = preparedStatement.executeUpdate();
+        System.out.println(affectedRows + " fila(s) actualizadas");
     }
     private static void eliminarEstudiante() throws SQLException{
         Statement statement = connection.createStatement();
